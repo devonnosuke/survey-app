@@ -1,0 +1,25 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "description": "[Project]\r Name=Kuis Survey Anime\r Version=1.0.0\r Description=Kuis Survey Anime adalah aplikasi web interaktif yang menampilkan pertanyaan survei seputar dunia anime. Aplikasi ini menampilkan satu soal survey dengan 10 jawaban yang masing-masing memiliki jumlah partisipan yang memberikan jawaban serupa. Data survey disimpan di localStorage untuk mendukung penggunaan berkelanjutan.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package-win": "electron-packager . survey-app --platform=win32 --arch=x64 --out=dist --overwrite --icon=app/assets/icon.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonnosuke/survey-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devonnosuke/survey-app/issues"
+  },
+  "homepage": "https://github.com/devonnosuke/survey-app#readme",
+  "devDependencies": {
+    "electron": "^34.0.0"
+  }
+}
