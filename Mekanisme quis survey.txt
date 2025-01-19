@@ -1,0 +1,34 @@
+Mekanisme quis survey
+[backspace] = kembali
+[tab] = ganti menu 
+[S] = tahan selama 3 detik jika jawaban salah
+[1-0] = tahan selama 3 detik jika jawaban benar
+[A] = tahan untuk meng-acak soal survey
+[<] [>] = tahan untuk memilih tim mana yang ditambah poinya
+
+
+
+
+untuk kode
+top_survey = true/false
+membuat utility untuk manager kode semua mekanisme tombol
+membuat utility untuk popup-popup (modal)
+membuat utility untuk countdown apapun
+membuat utility untuk animasi (tidak urgent)
+
+
+input survey
+- input survey
+- simpan survey
+- bisa pilih survey mana yang mau digunakan/tidak digunakan
+
+List UI apa saja yang harus ada
+- tampilan survey utama (udah mau done)
+- menu utama
+- list daftar survey (sebelum ke tampilan survey utama)
+- form input survey
+- Survey Manager (lihat daftar survey yang ada, survey yang aktif, ubah/hapus/tambah survey)
+
+
+
+
