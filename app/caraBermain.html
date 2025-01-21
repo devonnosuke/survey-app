@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Survey Anime</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="overflow: hidden">
+    <div class="py-5" id="apps">
+      <div class="row align-content-center">
+        <div class="col d-flex justify-content-center">
+          <div
+            class="card text-white bg-primary mb-3 px-4 py-4 card-78 tutor"
+            data-key="2"
+          >
+            <div class="card-body">
+              <h1>cara bermain</h1>
+              <ol class="list-group list-group-numbered text-start">
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">
+                      pemain terdiri dari dua tim (biru &merah)
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="fw-bold">
+                    kedua tim mengajukan 1 orang untuk melakukan suit jepang
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="fw-bold">
+                    tim yang menang suit berhak memilih survey yang akan
+                    ditampilkan dan berhak menjawab survey pertama
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="fw-bold">
+                    jika jawaban benar akan mendapat point sesuai jumlah survey
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="fw-bold">
+                    lanjut ke anggota tim yang lain menjawab, (jika tidak bisa
+                    menjawab bisa lempar ke tim lawan)
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="fw-bold">
+                    selanjutnya tim yang kalah suit menjawab survey
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          <button class="btn-lg button-77 xlg" role="button">
+            Home screen
+            <span class="btn-key" data-key="Backspace">[Backspace]</span>
+          </button>
+          <!-- <button class="btn btn-primary btn-lg xlg">
+            Home screen <span class="btn-key">[Backspace]</span>
+          </button> -->
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg info">
+        <i class="bi bi-info-circle" data-key="i"></i>
+      </button>
+    </div>
+    <!-- <script src="js/app.js" type="module"></script> -->
+    <script>
+      // Utility untuk menangani input tombol dari user
+      class KeyInputHandler {
+        constructor(targetElement) {
+          this.targetElement = targetElement; // Elemen yang akan diberi status 'active'
+          this.activeClass = "active";
+          this.key = targetElement.dataset.key || "1"; // Tombol yang akan ditangani (default: "1")
+          this.init();
+        }
+
+        // Inisialisasi event listener untuk menangkap input keyboard
+        init() {
+          document.addEventListener("keydown", (e) => this.handleKeyDown(e));
+          document.addEventListener("keyup", (e) => this.handleKeyUp(e));
+        }
+
+        // Menangani tombol yang ditekan
+        handleKeyDown(event) {
+          if (event.key === this.key) {
+            // Ganti tombol sesuai data-key elemen
+            this.targetElement.classList.add(this.activeClass);
+          }
+        }
+
+        // Menangani tombol yang dilepas
+        handleKeyUp(event) {
+          if (event.key === this.key) {
+            // Ganti tombol sesuai data-key elemen
+            this.targetElement.classList.remove(this.activeClass);
+            alert(`Tombol '${this.key}' telah ditekan!`);
+          }
+        }
+      }
+
+      // Cara menggunakan utility ini:
+      // Pastikan Anda memiliki elemen dengan data-key tertentu dalam HTML.
+      // Misal:
+      // <div class="card" data-key="2">Press 2 to activate</div>
+      // <div class="card" data-key="3">Press 3 to activate</div>
+
+      const targetElements = document.querySelectorAll("[data-key]");
+      targetElements.forEach((element) => {
+        new KeyInputHandler(element);
+      });
+    </script>
+  </body>
+</html>

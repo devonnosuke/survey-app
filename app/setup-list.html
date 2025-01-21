@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Survey Anime</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="overflow: hidden">
+    <div class="py-5" id="apps">
+      <div class="text-center">
+        <h2 class="mb-2">SEtup menu</h2>
+        <div class="card text-white bg-primary mb-3 px-3 py-2 card-78">
+          <div class="card-body">
+            <h2 class="card-questions mt-1">Daftar Survey</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container my-1">
+        <div class="row">
+          <div class="col-md-12 list-survey">
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button" data-key="1">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+            <!-- Kartu 1 -->
+            <div class="list-item">
+              <div class="list-card card-78" data-key="">
+                <div>1.</div>
+                <div class="answer">Siapakah karakter anime terpopuler?</div>
+                <button class="btn-lg button-77 xlg" role="button">
+                  <span class="btn-key">Lihat [1]</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-2 text-center">
+        <button class="btn-lg button-77 xlg" role="button" data-key="Backspace">
+          Back
+          <span class="btn-key">[Backspace]</span>
+        </button>
+        <button class="btn-lg button-77 xlg" role="button" data-key="Enter">
+          Tambah survey
+          <span class="btn-key">[ENTER]</span>
+        </button>
+      </div>
+    </div>
+    <!-- <script src="js/app.js" type="module"></script> -->
+    <script>
+      // Utility untuk menangani input tombol dari user
+      class KeyInputHandler {
+        constructor(targetElement) {
+          this.targetElement = targetElement; // Elemen yang akan diberi status 'active'
+          this.activeClass = "active";
+          this.key = targetElement.dataset.key; // Tombol yang akan ditangani (default: "1")
+          this.init();
+        }
+
+        // Inisialisasi event listener untuk menangkap input keyboard
+        init() {
+          document.addEventListener("keydown", (e) => this.handleKeyDown(e));
+          document.addEventListener("keyup", (e) => this.handleKeyUp(e));
+        }
+
+        // Menangani tombol yang ditekan
+        handleKeyDown(event) {
+          if (event.key === this.key) {
+            // Ganti tombol sesuai data-key elemen
+            this.targetElement.classList.add(this.activeClass);
+          }
+        }
+
+        // Menangani tombol yang dilepas
+        handleKeyUp(event) {
+          if (event.key === this.key) {
+            // Ganti tombol sesuai data-key elemen
+            setTimeout(() => {
+              this.targetElement.classList.remove(this.activeClass);
+              2;
+              alert(`Tombol '${this.key}' telah ditekan!`);
+            }, 600);
+          }
+        }
+      }
+
+      // Cara menggunakan utility ini:
+      // Pastikan Anda memiliki elemen dengan data-key tertentu dalam HTML.
+      // Misal:
+      // <div class="card" data-key="2">Press 2 to activate</div>
+      // <div class="card" data-key="3">Press 3 to activate</div>
+
+      const targetElements = document.querySelectorAll("[data-key]");
+      targetElements.forEach((element) => {
+        new KeyInputHandler(element);
+      });
+    </script>
+  </body>
+</html>
